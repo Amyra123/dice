@@ -1,0 +1,279 @@
+*{
+          box-sizing: border-box;
+          margin:0;
+          padding:0;
+
+}
+
+
+.container{
+          height: 140px;
+          width: 140px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform-style: preserve-3d;
+          transform:rotateY(-10deg);
+          perspective: -2000px;
+          border-bottom:20px;
+          transition: background-color ease-in;
+}
+
+.animate{
+        animation: change 0.1s linear 3; 
+}
+
+.front{
+          width:140px;
+          height:140px;
+          background-color:whitesmoke;
+          position: absolute;
+          transform: translateZ(70px);
+          grid-template-columns: repeat(3,1fr);
+                
+}
+.back{
+          display: grid;
+          width:140px;
+          height:140px;
+          background-color: whitesmoke;
+          position: absolute;
+          transform:rotateY(180deg) translateZ(70px);
+          grid-template-columns: repeat(3,1fr); 
+}
+.left{
+          width:140px;
+          height:140px;
+          background-color: whitesmoke;
+          position: absolute;
+          transform-origin: left;
+          transform: rotateY(-90deg) translateX(-70px);
+}
+.right{
+          width:140px;
+          height:140px;
+          background-color: whitesmoke;
+          position: absolute;
+          transform-origin: right;
+          transform: rotateY(90deg) translateX(70px);
+}
+.top{
+          width:140px;
+          height:140px;
+          background-color: whitesmoke;
+          position: absolute;
+          transform-origin: top;
+          transform:rotateX(-90deg) translateY(-70px);
+}
+.bottom{
+          width:140px;
+          height:140px;
+          background-color: whitesmoke;
+          position: absolute;
+          transform-origin: bottom;
+          transform:rotateX(90deg) translateY(70px);
+}
+
+@keyframes change
+{
+          from{transform:rotateX(0deg) rotateY(0deg);}
+          to{transform:rotateX(360deg) rotateZ(180deg);}
+}
+
+.contback{
+       transform:rotateY(170deg);
+}
+
+.contleft{
+       transform:rotateY(80deg);
+}
+
+.contright{
+       transform:rotateY(-100deg);
+}
+
+.conttop{
+       transform:rotateX(-90deg) rotateZ(-10deg);
+}
+
+.contbottom{
+       transform:rotateX(90deg) rotateZ(10deg);
+}
+
+              .container div{
+                     display: grid;
+                     grid-template-columns: repeat(3,1fr);
+                     grid-template-rows: repeat(3,1fr);
+                     justify-content: center;
+                     align-items: center;
+                     justify-items: center;
+                     border-radius: 10px;
+                     box-shadow: inset -0.35rem 0.35rem 0.75rem rgba(0, 0, 0, 0.3), inset 0.5rem -0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+                     
+              }
+       
+
+              .box{
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     
+              }
+
+              .dot{
+                     width: 30px;
+                     height:30px;
+                     border-radius: 50%;
+                     background-color: black;
+              }
+              #d11{
+                     grid-row:2/3;
+                     grid-column: 2/3;
+              }
+
+              #d21{
+                     grid-row:1/2;
+                     grid-column: 1/2;
+              }
+              #d22{
+                     grid-row:3/4;
+                     grid-column: 3/4;
+              }
+
+              #d31{
+                     grid-row:1/2;
+                     grid-column:2/3;
+              }
+              #d32{
+                     grid-row:2/3;
+                     grid-column:2/3;
+              }
+              #d33{
+                     grid-row:3/4;
+                     grid-column:2/3;
+              }
+
+              #d41{
+                     grid-row:1/2;
+                     grid-column: 1/2;
+              }
+              #d42{
+                     grid-row: 1/2;
+                     grid-column: 3/4;
+              }
+              #d43{
+                     grid-row: 3/4;
+                     grid-column: 1/2;
+              }
+              #d44{
+                     grid-row: 3/4;
+                     grid-column: 3/4;
+              }
+
+              #d51{
+                     grid-row: 1/2;
+                     grid-column: 1/2;
+              }
+              #d52{
+                     grid-row: 1/2;
+                     grid-column: 3/4;
+              }
+              #d53{
+                     grid-row: 2/3;
+                     grid-column: 2/3;
+              }
+              #d54{
+                     grid-row: 3/4;
+                     grid-column: 1/2;
+              }
+              #d55{
+                     grid-row: 3/4;
+                     grid-column: 3/4;
+              }
+
+              #d61{
+                     grid-row:1/2;
+                     grid-column: 1/2;
+              }
+              #d62{
+                     grid-row: 1/2;
+                     grid-column: 3/4;
+              }
+              #d63{
+                     grid-row: 3/4;
+                     grid-column: 1/2;
+              }
+              #d64{
+                     grid-row: 3/4;
+                     grid-column: 3/4;
+              }
+              #d65{
+                     grid-row:2/3;
+                     grid-column: 1/2;
+              }
+              #d66{
+                     grid-row: 2/3;
+                     grid-column: 3/4;
+              }
+
+
+@media (min-width:200px) and (max-width:740px){
+       .container{
+                    width:100px;
+                    height:100px;
+          }
+
+        
+
+          .front{
+                     width:100px;
+                     height:100px;
+                     transform: translateZ(50px);
+
+          }
+
+          .back{
+                     width:100px;
+                     height:100px;
+                     transform: rotateY(180deg) translateZ(50px);
+          }
+
+          .left{
+                 width:100px;
+                    height:100px;
+                    transform: rotateY(90deg) translateX(-50px);
+          }
+
+          .right{
+                 width:100px;
+                    height:100px;
+                    transform: rotateY(90deg) translateX(50px);
+          }
+
+          .top{
+                 width:100px;
+                    height:100px;
+                    transform: rotateX(-90deg) translateY(-50px);
+          }
+
+          .bottom{
+                 width:100px;
+                    height:100px;
+                    transform: rotateX(90deg) translateY(50px);
+          }
+
+          .dot{
+                 width: 20px;
+                     height:20px;
+                     border-radius: 50%;
+                     background-color: black;
+          }
+}
+
+
+
+
+
+
+
+   

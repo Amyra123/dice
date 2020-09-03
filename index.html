@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Dice Game</title>
+          <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="dice.css">
+          <link rel="stylesheet" href="in.css">
+</head>
+<body>
+
+          <video id="video" autoplay muted loop plays-inline>
+                    <source src="Confetti Loop no Alpha - Enchanted Media.mp4" type="video/mp4">
+                    </source>
+          </video>
+<div class="game">
+          <button class="btn" id="btn">
+                    NEW GAME
+          </button>
+          <div class="main">
+                    
+                    <div class="m" id="m1">
+                              <div class="winner" id ='we'>
+                                        <span class="w">W</span>
+                                        <span class="i">I</span>
+                                        <span class="n1">N</span>
+                                        <span class="n2">N</span>
+                                        <span class="e">E</span>
+                                        <span class="r">R</span>
+                              </div>
+                              <div class="upper">
+                              <div class="turns">
+                                        <pre>Turns Left   :   </pre>
+                                        <span class="turns_l" id="e">5</span>
+
+                              </div>
+
+                              <div class="player1">
+                                        PLAYER 1
+
+                              </div>
+
+                              <div class="score" id='score_even'>
+                                        0
+
+                              </div>
+                              </div>
+
+                              <div class="box">
+                                        <div class="container" id='c1'>
+                                                  <div class="front">
+                                                            <div class="dot" id="d11"></div>
+                                                  </div>
+                                                  <div class="back">
+                                                            <div class="dot" id="d21"></div>
+                                                            <div class="dot" id="d22"></div>
+                                                  </div>
+                                                  <div class="left">
+                                                            <div class="dot" id="d31"></div>
+                                                            <div class="dot" id="d32"></div>
+                                                            <div class="dot" id="d33"></div>
+                                                  </div>
+                                                  <div class="right">
+                                                            <div class="dot" id="d41"></div>
+                                                            <div class="dot" id="d42"></div>
+                                                            <div class="dot" id="d43"></div>
+                                                            <div class="dot" id="d44"></div>
+                                                  </div>
+                                                  <div class="top">
+                                                            <div class="dot" id="d51"></div>
+                                                            <div class="dot" id="d52"></div>
+                                                            <div class="dot" id="d53"></div>
+                                                            <div class="dot" id="d54"></div>
+                                                            <div class="dot" id="d55"></div>
+                                                  </div>
+                                                  <div class="bottom">
+                                                            <div class="dot" id="d61"></div>
+                                                            <div class="dot" id="d62"></div>
+                                                            <div class="dot" id="d63"></div>
+                                                            <div class="dot" id="d64"></div>
+                                                            <div class="dot" id="d65"></div>
+                                                            <div class="dot" id="d66"></div>
+                                                  </div>
+                              
+                                        </div>
+                              </div>
+                    </div>
+
+
+                    <div class="m" id="m2">
+                              <div class="winner" id='wo'>
+                                        <span class="w">W</span>
+                                        <span class="i">I</span>
+                                        <span class="n1">N</span>
+                                        <span class="n2">N</span>
+                                        <span class="e">E</span>
+                                        <span class="r">R</span>
+                              </div>
+                              <div class="upper">
+                              <div class="turns">
+                                        <pre>Turns Left   :   </pre>
+                                        <span class="turns_l" id="o">5</span>
+
+                              </div>
+
+                              <div class="player2">
+                                        PLAYER 2
+
+                              </div>
+
+                              <div class="score" id='score_odd'>
+                                        0
+
+                              </div>
+                              </div>
+
+                              <div class="box">
+                                        <div class="container" id='c2'>
+                                                  <div class="front">
+                                                            <div class="dot" id="d11"></div>
+                                                  </div>
+                                                  <div class="back">
+                                                            <div class="dot" id="d21"></div>
+                                                            <div class="dot" id="d22"></div>
+                                                  </div>
+                                                  <div class="left">
+                                                            <div class="dot" id="d31"></div>
+                                                            <div class="dot" id="d32"></div>
+                                                            <div class="dot" id="d33"></div>
+                                                  </div>
+                                                  <div class="right">
+                                                            <div class="dot" id="d41"></div>
+                                                            <div class="dot" id="d42"></div>
+                                                            <div class="dot" id="d43"></div>
+                                                            <div class="dot" id="d44"></div>
+                                                  </div>
+                                                  <div class="top">
+                                                            <div class="dot" id="d51"></div>
+                                                            <div class="dot" id="d52"></div>
+                                                            <div class="dot" id="d53"></div>
+                                                            <div class="dot" id="d54"></div>
+                                                            <div class="dot" id="d55"></div>
+                                                  </div>
+                                                  <div class="bottom">
+                                                            <div class="dot" id="d61"></div>
+                                                            <div class="dot" id="d62"></div>
+                                                            <div class="dot" id="d63"></div>
+                                                            <div class="dot" id="d64"></div>
+                                                            <div class="dot" id="d65"></div>
+                                                            <div class="dot" id="d66"></div>
+                                                  </div>
+                              
+                                        </div>
+                              </div>
+                    </div>
+          </div>
+          <button class="roll" id="roll">
+                    ROLL
+          </button>
+
+</div>
+
+
+
+</body>
+<script src="dice.js">
+
+</script>
+</html>
